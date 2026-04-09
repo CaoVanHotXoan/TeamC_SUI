@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Thuyết Trình Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Phần Banner mở đầu (Hero Section) -->
+    <section class="hero">
+        <h1 class="reveal-text">
+            Thuyết Trình<br>
+            <span>Web Thời Trang</span><br>
+           Từ team C Sủi
+        </h1>
+        <div class="scroll-indicator">CUỘN ĐỂ KHÁM PHÁ</div>
+    </section>
+
+    <!-- Khu vực chứa các thẻ trượt xếp chồng lên nhau -->
+    <div class="stack-area">
+        <!-- Slide 1: Giới thiệu & Trang Chủ -->
+        <div class="card card-full">
+            <div class="card-content">
+                <span class="badge-red badge-solid">SLIDE 1: GIỚI THIỆU</span>
+                <h2 class="card-title-large">Tổng quan Website Team C Sủi</h2>
+                <p class="card-text">Giới thiệu dự án: Website thương mại điện tử bán quần áo thời trang (Local Brand).</p>
+                <div class="info-grid-3">
+                    <div class="info-box border-left-red">
+                        <h3 class="info-title">🌐 HTML Semantic</h3>
+                        <p class="info-desc">Sử dụng cấu trúc chuẩn SEO (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>) để xây dựng khung xương trang web.</p>
+                    </div>
+                    <div class="info-box border-left-red">
+                        <h3 class="info-title">🎨 CSS Flexbox & Slider</h3>
+                        <p class="info-desc">Sử dụng Flexbox để dàn đều các mục trên thanh điều hướng (Header) và thiết kế Banner Slider tự động chuyển động.</p>
+                    </div>
+                    <div class="info-box border-left-red">
+                        <h3 class="info-title">✨ JS Effects</h3>
+                        <p class="info-desc">Điểm nhấn là hiệu ứng <strong>Con trỏ chuột Sakura</strong> (hoa anh đào rơi) và <strong>Nút nam châm</strong> (nút né chuột) sử dụng sự kiện <code>mousemove</code> và <code>requestAnimationFrame</code> để xử lý tọa độ mượt mà.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Mục MOST POPULAR -->
+        <div class="card">
+            <div class="card-content">
+                <span class="card-num">SLIDE 2</span>
+                <h2>Danh mục Most Popular</h2>
+                <p><strong>Mục đích:</strong> Hiển thị các sản phẩm được yêu thích nhất để thu hút người dùng ngay khi truy cập.</p>
+                <ul class="info-list" style="margin-top: 20px;">
+                    <li><strong>HTML:</strong> Xây dựng cấu trúc "Product Card" (Thẻ sản phẩm) bằng các thẻ <code>&lt;div&gt;</code> lồng nhau, chứa ảnh, tên và giá tiền.</li>
+                    <li><strong>CSS:</strong> Áp dụng CSS Grid để chia lưới sản phẩm (ví dụ: 4 sản phẩm/hàng). Sử dụng hiệu ứng <code>:hover</code> kết hợp <code>transition</code> để làm ảnh phóng to nhẹ và nút "Thêm vào giỏ hàng" hiện lên khi người dùng di chuột vào.</li>
+                </ul>
+            </div>
+            <div class="card-img" style="border-radius: 16px;">
+                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=2000&auto=format&fit=crop" alt="Most Popular Clothing">
+            </div>
+        </div>
+
+        <!-- Slide 3: Mục NEW ARRIVALS -->
+        <div class="card card-full">
+            <div class="card-content">
+                <span class="badge-red badge-outline">SLIDE 3: NEW ARRIVALS</span>
+                <h2 class="card-title-large">Cập nhật xu hướng - New Arrivals</h2>
+                <p class="card-text"><strong>Mục đích:</strong> Nơi cập nhật các mẫu mã mới nhất của shop.</p>
+                <div class="split-layout">
+                    <div class="split-left">
+                        <div class="feature-box">
+                            <h3 class="info-title">🏷️ HTML Badges</h3>
+                            <p class="info-desc">Sử dụng các thẻ <code>&lt;span&gt;</code> để làm nhãn dán (Badge) như "NEW", "HOT", "SALE" đính kèm trên góc ảnh sản phẩm.</p>
+                        </div>
+                    </div>
+                    <div class="split-right">
+                        <div class="feature-box">
+                            <h3 class="info-title">🎯 CSS Positioning</h3>
+                            <p class="info-desc">Sử dụng thuộc tính <code>position: absolute</code> để căn chỉnh chính xác vị trí của các nhãn dán đè lên trên bức ảnh (<code>position: relative</code>). Thêm <code>box-shadow</code> để tạo độ nổi 3D cho sản phẩm.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 30px; border-radius: 12px; overflow: hidden; height: 250px;">
+                    <img src="./img/Banner2.png" alt="New Arrivals Fashion" style="width: 100%; height: 100%; object-fit: fill;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Mục CATALOG -->
+        <div class="card">
+            <div class="card-content">
+                <span class="card-num">SLIDE 4</span>
+                <h2>Phân loại sản phẩm - Catalog</h2>
+                <p><strong>Mục đích:</strong> Giúp khách hàng dễ dàng tìm kiếm theo từng loại áo (T-Shirts, Hoodies, Jackets).</p>
+                <ul class="info-list" style="margin-top: 20px;">
+                    <li><strong>HTML/CSS:</strong> Xây dựng Dropdown Menu (Menu thả xuống). Ban đầu menu con được ẩn đi (<code>display: none</code> hoặc <code>opacity: 0</code>), khi người dùng <code>:hover</code> chuột vào chữ Catalog, menu con sẽ hiện ra mượt mà.</li>
+                    <li><strong>JavaScript:</strong> Sử dụng JS (DOM Manipulation) để bắt sự kiện click vào nút (+). Khi click, JS sẽ lấy thông tin áo (Tên, Giá) và đẩy vào mảng giỏ hàng.</li>
+                </ul>
+            </div>
+            <div class="card-img" style="border-radius: 16px;">
+                <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=2000&auto=format&fit=crop" alt="Catalog Categories">
+            </div>
+        </div>
+
+        <!-- Slide 5: Mục COLLECTION -->
+        <div class="card card-full">
+            <div class="card-content">
+                <span class="badge-red badge-solid">SLIDE 5: COLLECTION</span>
+                <h2 class="card-title-large">Bộ sưu tập theo mùa - Collection</h2>
+                <p class="card-text"><strong>Mục đích:</strong> Trưng bày các bộ sưu tập theo concept (Lookbook) như Summer 2024, Winter 2023.</p>
+                <div class="split-layout">
+                    <div class="split-left">
+                        <img src="./img/mtp.jpg" alt="Collection Lookbook" style="width: 100%; border-radius: 12px; height: 500px; object-fit: fill;">
+                    </div>
+                    <div class="split-right">
+                        <ul class="feature-list">
+                            <li>
+                                <span class="arrow">→</span>
+                                <div>
+                                    <strong>Cấu trúc HTML</strong>
+                                    <p>Sử dụng cấu trúc hình ảnh lớn đan xen với văn bản giới thiệu bộ sưu tập.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="arrow">→</span>
+                                <div>
+                                    <strong>Responsive Web Design (CSS)</strong>
+                                    <p>Áp dụng kỹ thuật thông qua <code>@media queries</code>. Giúp các hình ảnh và lưới sản phẩm tự động co giãn, xếp dọc lại khi người dùng xem trên màn hình điện thoại (Mobile) thay vì máy tính (PC).</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Mục INFORMATION -->
+        <div class="card card-full">
+            <div class="card-content">
+                <span class="badge-red badge-outline">SLIDE 6: INFORMATION</span>
+                <h2 class="card-title-large">Thông tin cửa hàng & Tuyển dụng</h2>
+                <p class="card-text"><strong>Mục đích:</strong> Cung cấp địa chỉ hệ thống cửa hàng và form ứng tuyển nhân sự.</p>
+                <div class="info-grid-3 no-border">
+                    <div class="icon-box">
+                        <div class="icon-wrapper">🗺️</div>
+                        <div class="icon-content">
+                            <h3 class="info-title">Trang Store (HTML)</h3>
+                            <p class="info-desc">Nhúng bản đồ Google Maps bằng thẻ <code>&lt;iframe&gt;</code> để khách hàng dễ dàng tìm đường.</p>
+                        </div>
+                    </div>
+                    <div class="icon-box">
+                        <div class="icon-wrapper">📝</div>
+                        <div class="icon-content">
+                            <h3 class="info-title">Trang Career (HTML)</h3>
+                            <p class="info-desc">Xây dựng Form ứng tuyển với các thẻ <code>&lt;input type="text"&gt;</code>, <code>&lt;input type="email"&gt;</code>, <code>&lt;input type="file"&gt;</code> để nộp CV.</p>
+                        </div>
+                    </div>
+                    <div class="icon-box">
+                        <div class="icon-wrapper">⚙️</div>
+                        <div class="icon-content">
+                            <h3 class="info-title">Tính năng Toggle (JS)</h3>
+                            <p class="info-desc">Viết hàm xử lý sự kiện <code>onclick</code> để làm tính năng Ẩn/Hiện chi tiết công việc. Khi bấm vào một vị trí, JS sẽ đổi <code>style.display</code> để mở rộng thông tin mô tả công việc đó ra.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: USER ACTIONS -->
+        <div class="card card-full">
+            <div class="card-content">
+                <span class="badge-red badge-solid">SLIDE 7: USER ACTIONS</span>
+                <h2 class="card-title-large">Tương tác người dùng - Đăng nhập & Giỏ hàng</h2>
+                <p class="card-text"><strong>Mục đích:</strong> Nơi người dùng thực hiện mua sắm và quản lý tài khoản.</p>
+                <div class="split-layout">
+                    <div class="split-left">
+                        <div class="feature-box">
+                            <h3 class="info-title">🛒 Giỏ Hàng (Cart)</h3>
+                            <ul class="info-list">
+                                <li><strong>HTML/CSS:</strong> Thiết kế bảng (Table) hoặc danh sách để hiển thị các món hàng đã chọn trong trang Giỏ Hàng.</li>
+                                <li><strong>JavaScript:</strong> Sử dụng <code>localStorage</code> để lưu trữ dữ liệu giỏ hàng. Nhờ vậy, khi khách hàng F5 tải lại trang hoặc chuyển trang, giỏ hàng vẫn không bị mất. JS cũng đảm nhiệm việc tính tổng tiền tự động.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="split-right">
+                        <div class="feature-box">
+                            <h3 class="info-title">🔐 Đăng Nhập (Login)</h3>
+                            <ul class="info-list">
+                                <li><strong>HTML/CSS:</strong> Thiết kế Form Đăng nhập/Đăng ký với các hiệu ứng <code>focus</code> vào ô nhập liệu.</li>
+                                <li><strong>JavaScript:</strong> Dùng JS để kiểm tra (Validate) xem người dùng đã nhập đủ email/mật khẩu chưa trước khi cho phép chuyển trang.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: KẾT THÚC -->
+        <div class="card card-full final-card">
+            <div class="card-content" style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <h2 class="card-title-large" style="font-size: 4rem; margin-bottom: 30px;">Kết Thúc</h2>
+                <p class="card-text" style="font-size: 1.5rem; max-width: 800px; margin: 0 auto;">Cảm ơn thầy và các bạn đã lắng nghe bài thuyết trình của Team C Sủi!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Khu vực tạo khoảng trống để cuộn qua thẻ cuối cùng -->
+    <section class="hero" style="height: 50vh;">
+    </section>
+
+    <!-- Nhúng file JavaScript xử lý hiệu ứng cuộn -->
+    <script src="script.js"></script>
+</body>
+</html>
